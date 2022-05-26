@@ -1,19 +1,16 @@
 <% layout('campgrounds/layouts/boilerplate') %>
 <div id="cluster-map"></div>
 <!--copyied till 9-->
-<h1 class="display-6 text-center mb-4">Search and View Our Campgrounds</h1>
-
+<h1 class="display-6 text-center mb-4" style="font-family:Arial, Helvetica, sans-serif;">Search and View Our Campgrounds</h1>
 <form action="/results/?" class="d-flex mb-5">
-    <input class="form-control me-2" type="search" placeholder="Search Your Campgrounds ...." name="search_query" aria-label="Search">
+    <input class="form-control me-2" type="search" placeholder="Search Your Campgrounds ...." name="search_query" aria-label="Search" style="border:2px solid black ;">
     <button class="btn btn-outline-dark" type="submit">Search</button>
   </form>
 
 
 
 <h1>All Campgrounds</h1>
-    <div>
-        <a href="/campgrounds/new">Add Campground</a>
-    </div>
+   
 
    <% for(let campground of campgrounds){%>
     <div class="card mb-3">

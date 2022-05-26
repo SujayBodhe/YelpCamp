@@ -1,12 +1,13 @@
 <% layout('campgrounds/layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/registerpg.css">
 <div class="container d-flex justify-content-center align-items-center mt-5">
     <div class="row">
         <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
             <div class="card shadow">
                 <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
                     alt="" class="card-img-top" />
-                <div class="card-body">
-                    <h5 class="card-title">Register</h5>
+                <div class="card-body" style="background-color:#ffe5ec;">
+                    <h5 class="card-title" style="text-align:center; font-weight: 700; font-size:25px; font-family: Arial;">Register</h5>
                     <form action="/register" method="POST" class="validated-form" novalidate>
                         <div class="mb-3">
                             <label class="form-label" for="username">Username</label>
